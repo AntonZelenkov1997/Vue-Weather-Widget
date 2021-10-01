@@ -30,6 +30,7 @@ export default {
 </script>
 
 <style scoped lang="scss">
+
 .containerWeatherWidget {
   position: relative;
   width: 432px;
@@ -64,9 +65,7 @@ export default {
       align-items: center;
 
       &__cityTitle {
-        font-family: Rubik, serif, sans-serif;
-        font-style: normal;
-        font-weight: 500;
+        @include fw500();
         font-size: 50px;
         line-height: 59px;
       }
@@ -74,6 +73,7 @@ export default {
       &__secondaryTitle {
         font-size: 25px;
         line-height: 30px;
+        @include fwNormal();
       }
     }
 

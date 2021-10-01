@@ -3,3 +3,9 @@
   font-style: normal;
   font-weight: 500;
 }
+
+@mixin fwNormal() {
+  font-family: Rubik, Arial, serif, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+}

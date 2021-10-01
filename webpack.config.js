@@ -59,6 +59,11 @@ module.exports = {
                     },
                     {
                         loader: 'sass-loader',
+                        options: {
+                            additionalData: `
+                                  @import "./src/styles/index.scss";
+                                `
+                        }
                     }
                 ],
             },
@@ -71,9 +76,9 @@ module.exports = {
         template: path.resolve(__dirname, "public", "index.html")
     })],
     resolve: {
-        alias: {
-            vue$: "vue/dist/vue.runtime.esm.js",
-        },
+        // alias: {
+        //     vue$: "vue/dist/vue.runtime.esm.js",
+        // },
         extensions: ["*", ".ts", ".js", ".vue", ".json"],
     },
 };
