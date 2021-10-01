@@ -17,7 +17,7 @@
 
 <script lang="ts">
 
-import redForest from '../../assets/images/red_forest.png'
+import redForest from '../../assets/images/red_forest.png';
 
 export default {
   name: "WeatherWidget",
