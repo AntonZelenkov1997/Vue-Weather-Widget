@@ -22,10 +22,11 @@ module.exports = {
             },
             {
                 test: /\.tsx?$/,
-                loader: "babel-loader",
-                // options: {
-                //   appendTsSuffixTo: [/\.vue$/],
-                // },
+                loader: "ts-loader",
+                options: {
+                    transpileOnly: true,
+                    appendTsSuffixTo: [/\.vue$/],
+                },
                 exclude: /node_modules/,
             },
             {

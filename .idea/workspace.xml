@@ -1,9 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="65c09a7d-a111-4899-a1cc-83cc29e62b21" name="Changes" comment="Add fonts">
-      <change beforePath="$PROJECT_DIR$/src/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+    <list default="true" id="44819f9d-f619-4a33-b713-3da3b866f0e9" name="Changes" comment="Fix problems with fonts">
+      <change afterPath="$PROJECT_DIR$/.idea/discord.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vue-weather-widget.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/API/API.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Components/BackgroundCard/BackgroundCard.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Components/CityBlock.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Components/EmptyWidget/EmptyWidget.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Components/SettingsComponent/SettingsComponent.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Components/WeatherCard/WeatherCard.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/hamburger.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/icons/clear.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/icons/rainy.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/icons/setting_gear.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/icons/sunny.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/store/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/store/settingsComponentStore/settingsComponentStore.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/styles/variables.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/types/index.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/generateDate.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/generateUniqueId.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/getLocation.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/localStorageUtils.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/rv.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/transformWeatherData.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/App/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/App/App.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/WeatherWidget/WeatherWidget.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/WeatherWidget/WeatherWidget.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/cold-mountains.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/images/cold_mountains.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/styles/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/index.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/mixins.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/mixins.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webpack.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.config.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,15 +49,16 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Vue Single File Component" />
         <option value="SCSS File" />
+        <option value="TypeScript File" />
+        <option value="Vue Single File Component" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectId" id="1yufUU3mdJpAk9oWt1a8O2cuve5" />
+  <component name="ProjectId" id="1yvAf4SDAfgqkjgQgtQ9o2kmusC" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -33,31 +67,23 @@
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/webpack.config.js" />
     <property name="list.type.of.created.stylesheet" value="SCSS" />
-    <property name="nodejs_package_manager_path" value="yarn" />
-    <property name="settings.editor.selected.configurable" value="settings.webpack" />
-    <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\PhpStorm 2021.2.2\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="ts.external.directory.path" value="C:\Projects\vue-weather-widget\node_modules\typescript\lib" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Projects\vue-weather-widget\src\assets\fonts" />
+      <recent name="C:\Projects\vue-weather-widget\src\types" />
+      <recent name="C:\Projects\vue-weather-widget\src" />
       <recent name="C:\Projects\vue-weather-widget\src\assets\images" />
+      <recent name="C:\Projects\vue-weather-widget\src\assets\images\icons" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.start">
-    <configuration name="build" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
-      <package-json value="$PROJECT_DIR$/package.json" />
-      <command value="run" />
-      <scripts>
-        <script value="build" />
-      </scripts>
-      <node-interpreter value="project" />
-      <envs />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager">
     <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -71,36 +97,40 @@
     <recent_temporary>
       <list>
         <item itemvalue="npm.start" />
-        <item itemvalue="npm.build" />
       </list>
     </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="65c09a7d-a111-4899-a1cc-83cc29e62b21" name="Changes" comment="" />
-      <created>1633106411920</created>
+      <changelist id="44819f9d-f619-4a33-b713-3da3b866f0e9" name="Changes" comment="" />
+      <created>1633121787716</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1633106411920</updated>
-      <workItem from="1633106414459" duration="8764000" />
-      <workItem from="1633117964922" duration="988000" />
-      <workItem from="1633119430728" duration="883000" />
-      <workItem from="1633120331450" duration="108000" />
-      <workItem from="1633120449913" duration="151000" />
+      <updated>1633121787716</updated>
+      <workItem from="1633121789585" duration="3365000" />
+      <workItem from="1633158943816" duration="15247000" />
+      <workItem from="1633187959283" duration="10825000" />
+      <workItem from="1633272183235" duration="12894000" />
+      <workItem from="1633286345827" duration="14434000" />
     </task>
-    <task id="LOCAL-00001" summary="Add fonts">
-      <created>1633119656330</created>
+    <task id="LOCAL-00001" summary="Fix problems with fonts">
+      <created>1633125183531</created>
       <option name="number" value="00001" />
       <option name="presentableId" value="LOCAL-00001" />
       <option name="project" value="LOCAL" />
-      <updated>1633119656330</updated>
+      <updated>1633125183531</updated>
     </task>
     <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+    <option name="exactExcludedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/src/index.d.ts" />
+      </list>
+    </option>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -115,12 +145,7 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Initialize vue app" />
-    <MESSAGE value="Add fonts" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add fonts" />
-  </component>
-  <component name="XSLT-Support.FileAssociations.UIState">
-    <expand />
-    <select />
+    <MESSAGE value="Fix problems with fonts" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix problems with fonts" />
   </component>
 </project>

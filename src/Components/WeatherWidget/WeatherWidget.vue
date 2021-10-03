@@ -1,31 +1,61 @@
 <template>
   <article class="containerWeatherWidget">
+    <div class="containerWeatherWidget__settingGear settingGear" @click="toggleStatus">
+      <img src="../../assets/images/icons/setting_gear.png" class="settingGear__icon" alt=""/>
+    </div>
     <div class="containerWeatherWidget__bgCardContainer bgCardContainer">
-      <img class="bgCardContainer__bgCard" :src="getRedForestImage" alt="not found"/>
+      <background-card/>
     </div>
-    <div class="containerWeatherWidget__contentBlock contentBlock">
-      <div class="contentBlock__headBlock headBlock">
-        <h1 class="headBlock__cityTitle">
-          Vancouver, CA
-        </h1>
-        <h2 class="headBlock__secondaryTitle">Monday, April 26, 2021 </h2>
-      </div>
 
-    </div>
+    <empty-widget v-if="isEmptyWidget"/>
+
+    <weather-card v-if="isWeatherCard" v-for="weatherInfo in GET_CITIES" :weatherInfo="weatherInfo"
+                  :key="weatherInfo.id"/>
+
+    <settings-component v-if="isSettingsVisible"/>
   </article>
 </template>
 
 <script lang="ts">
 
-import redForest from '../../assets/images/red_forest.png';
+import {mapActions, mapGetters} from "vuex";
+import WeatherCard from "../WeatherCard/WeatherCard.vue";
+import EmptyWidget from "../EmptyWidget/EmptyWidget.vue";
+import SettingsComponent from "../SettingsComponent/SettingsComponent.vue";
+import BackgroundCard from "../BackgroundCard/BackgroundCard.vue";
+
 
 export default {
   name: "WeatherWidget",
+  components: {SettingsComponent, WeatherCard, EmptyWidget, BackgroundCard},
   computed: {
-    getRedForestImage() {
-      return redForest
+    ...mapGetters([
+      'GET_CITIES_IS_EMPTY',
+      'GET_CITIES'
+    ]),
+
+
+    isEmptyWidget() {
+      return this.GET_CITIES_IS_EMPTY && !this.isSettingsVisible
+    },
+
+    isWeatherCard() {
+      return !this.GET_CITIES_IS_EMPTY && !this.isSettingsVisible
+    },
+  },
+
+  data() {
+    return {
+      isSettingsVisible: false
     }
-  }
+  },
+
+  methods: {
+
+    toggleStatus() {
+      this.isSettingsVisible = !this.isSettingsVisible
+    }
+  },
 }
 </script>
 
@@ -33,8 +63,8 @@ export default {
 
 .containerWeatherWidget {
   position: relative;
-  width: 432px;
-  height: 768px;
+  max-width: 432px;
+
   border-radius: 20px;
   overflow: hidden;
 
@@ -46,38 +76,37 @@ export default {
     width: 100%;
     height: 100%;
 
-    &__bgCard {
-      object-fit: cover;
-      width: 100%;
-      height: 100%;
-    }
+    //&__bgCard {
+    //  object-fit: cover;
+    //  width: 100%;
+    //  height: 100%;
+    //  position: absolute;
+    //}
+
+    //&__overlay {
+    //  background-color: black;
+    //  opacity: 0.1;
+    //  position: absolute;
+    //  width: 100%;
+    //  height: 100%;
+    //  z-index: 1;
+    //}
   }
 
-  &__contentBlock, .contentBlock {
-    padding: 163px 28px 52px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  &__settingGear, .settingGear {
+    z-index: 2;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
 
-    &__headBlock, .headBlock {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-
-      &__cityTitle {
-        @include fw500();
-        font-size: 50px;
-        line-height: 59px;
-      }
-
-      &__secondaryTitle {
-        font-size: 25px;
-        line-height: 30px;
-        @include fwNormal();
-      }
+    &__icon {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
     }
-
-
   }
 }
 </style>
