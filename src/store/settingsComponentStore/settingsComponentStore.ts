@@ -12,7 +12,7 @@ type settingsComponentStoreType = VuexModule<settingsStateType>
 const settingsComponentStore: settingsComponentStoreType = {
     state: () => ({
         cities: [] as ArrayWeatherInfoType,
-        currentCityBlockDrag: null
+        currentCityBlockDrag: null as weatherInfoType | null
     }),
 
     actions: {
@@ -51,7 +51,7 @@ const settingsComponentStore: settingsComponentStoreType = {
                 commit('SET_NEW_CITY', transformWeatherData(response.data, getters.GET_CITIES.length))
 
             } catch (e) {
-                console.log('Не удалось получить данные данного города')
+                alert("Failed to get data for this city :'(")
             }
         },
 
