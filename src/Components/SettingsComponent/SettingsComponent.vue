@@ -25,31 +25,40 @@
 
 <script lang="ts">
 
-import CityBlock from "../CityBlock.vue";
 import {mapActions, mapGetters} from "vuex";
+import Vue from "vue";
 
-export default {
+import CityBlock from "../CityBlock.vue";
+
+
+export default Vue.extend({
   name: "SettingsComponent",
   components: {CityBlock},
+
   methods: {
     ...mapActions([
       'SET_NEW_CITY'
     ]),
 
     async setWeatherByCity() {
-      await this.SET_NEW_CITY(<string>this.$refs.input.value)
+
+      await this.SET_NEW_CITY((this.$refs.input as HTMLInputElement)?.value)
+
       this.clearInput()
     },
 
-    async onKeyEnter(e: KeyboardEvent<HTMLInputElement>) {
+    async onKeyEnter(e: KeyboardEvent) {
       if (e.code === 'Enter') {
-        await this.SET_NEW_CITY(e.target.value);
+        await this.SET_NEW_CITY((e.target as HTMLInputElement).value);
         this.clearInput()
       }
     },
 
     clearInput() {
-      this.$refs.input.value = ''
+
+      if (this.$refs.input) {
+        (this.$refs.input as HTMLInputElement).value = ''
+      }
     }
   },
 
@@ -58,7 +67,7 @@ export default {
       'GET_CITIES'
     ])
   },
-}
+})
 </script>
 
 <style scoped lang="scss">

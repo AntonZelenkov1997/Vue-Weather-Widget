@@ -23,14 +23,16 @@
 
 <script lang="ts">
 import {mapGetters} from "vuex";
+import Vue, {PropType} from 'vue';
+
 import rv from "../../utils/rv";
 import generateDate from "../../utils/generateDate";
 
-export default {
+export default Vue.extend({
   name: "WeatherCard",
   props: {
     weatherInfo: {
-      type: Object,
+      type: Object as PropType<weatherInfoType>,
       required: true
     }
   },
@@ -70,7 +72,7 @@ export default {
   },
 
 
-}
+})
 </script>
 
 <style scoped lang="scss">

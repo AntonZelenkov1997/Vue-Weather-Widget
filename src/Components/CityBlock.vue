@@ -44,12 +44,14 @@
 <script lang="ts">
 
 import {mapActions} from "vuex";
+import Vue, {PropType} from "vue";
+
 
 export default Vue.extend({
   name: "CityBlock",
   props: {
     weatherInfo: {
-      type: Object as weatherInfoType,
+      type: Object as PropType<weatherInfoType>,
       required: true
     },
   },
@@ -68,11 +70,11 @@ export default Vue.extend({
     },
 
 
-    dragStartHandler(e) {
+    dragStartHandler() {
       this.SET_CURRENT_CITY_BLOCK_DRAG(this.weatherInfo)
     },
 
-    dropHandler(e) {
+    dropHandler() {
       this.SET_CHANGE_ORDER(this.weatherInfo)
     },
 
@@ -84,6 +86,7 @@ export default Vue.extend({
     }
   }
 })
+
 </script>
 
 <style scoped lang="scss">

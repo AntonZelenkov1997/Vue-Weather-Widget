@@ -1,40 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="44819f9d-f619-4a33-b713-3da3b866f0e9" name="Changes" comment="Fix problems with fonts">
-      <change afterPath="$PROJECT_DIR$/src/types/vue-shims.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/types/vuex.d.ts" afterDir="false" />
+    <list default="true" id="44819f9d-f619-4a33-b713-3da3b866f0e9" name="Changes" comment="Remove fonts. Start fixing problems with typescript">
+      <change afterPath="$PROJECT_DIR$/src/types/png.d.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/BackgroundCard/BackgroundCard.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/BackgroundCard/BackgroundCard.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/CityBlock.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/CityBlock.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/SettingsComponent/SettingsComponent.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/SettingsComponent/SettingsComponent.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/WeatherCard/WeatherCard.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/WeatherCard/WeatherCard.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/WeatherWidget/WeatherWidget.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/WeatherWidget/WeatherWidget.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/fonts/fonts.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/fonts/subset-Rubik-Black.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/fonts/subset-Rubik-Black.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/fonts/subset-Rubik-BlackItalic.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/fonts/subset-Rubik-BlackItalic.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/fonts/subset-Rubik-Bold.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/fonts/subset-Rubik-Bold.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/fonts/subset-Rubik-BoldItalic.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/fonts/subset-Rubik-BoldItalic.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/fonts/subset-Rubik-Italic.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/fonts/subset-Rubik-Italic.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/fonts/subset-Rubik-Light.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/fonts/subset-Rubik-Light.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/fonts/subset-Rubik-LightItalic.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/fonts/subset-Rubik-LightItalic.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/fonts/subset-Rubik-Medium.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/fonts/subset-Rubik-Medium.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/fonts/subset-Rubik-MediumItalic.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/fonts/subset-Rubik-MediumItalic.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/fonts/subset-Rubik-Regular.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/fonts/subset-Rubik-Regular.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/fonts/subset-RubikMonoOne-Regular.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/fonts/subset-RubikMonoOne-Regular.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/settingsComponentStore/settingsComponentStore.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/settingsComponentStore/settingsComponentStore.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webpack.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/types/index.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/types/index.d.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -112,6 +87,7 @@
       <workItem from="1633272183235" duration="12894000" />
       <workItem from="1633286345827" duration="14434000" />
       <workItem from="1633325405342" duration="4882000" />
+      <workItem from="1633330360218" duration="4176000" />
     </task>
     <task id="LOCAL-00001" summary="Fix problems with fonts">
       <created>1633125183531</created>
@@ -120,7 +96,14 @@
       <option name="project" value="LOCAL" />
       <updated>1633125183531</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Remove fonts. Start fixing problems with typescript">
+      <created>1633330402676</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1633330402676</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -145,6 +128,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Fix problems with fonts" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fix problems with fonts" />
+    <MESSAGE value="Remove fonts. Start fixing problems with typescript" />
+    <option name="LAST_COMMIT_MESSAGE" value="Remove fonts. Start fixing problems with typescript" />
   </component>
 </project>

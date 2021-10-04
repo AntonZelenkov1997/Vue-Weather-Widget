@@ -14,14 +14,14 @@
 
 import redForest from '../../assets/images/red_forest.png';
 import coldMountains from '../../assets/images/cold_mountains.png'
+import Vue from 'vue';
 
-
-export default {
+export default Vue.extend({
   name: "BackgroundCard",
   data() {
     return {
       status: true,
-      setIntervalLink: setInterval.bind(window)
+      setIntervalLink: setInterval.bind(window) as any
     }
   },
   computed: {
@@ -43,7 +43,8 @@ export default {
   destroyed() {
     clearInterval(this.setIntervalLink)
   }
-}
+})
+
 </script>
 
 <style scoped lang="scss">

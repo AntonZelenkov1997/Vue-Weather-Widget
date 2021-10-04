@@ -18,6 +18,8 @@
 
 <script lang="ts">
 
+import Vue from 'vue';
+
 import {mapGetters} from "vuex";
 import WeatherCard from "../WeatherCard/WeatherCard.vue";
 import EmptyWidget from "../EmptyWidget/EmptyWidget.vue";
@@ -25,7 +27,7 @@ import SettingsComponent from "../SettingsComponent/SettingsComponent.vue";
 import BackgroundCard from "../BackgroundCard/BackgroundCard.vue";
 
 
-export default {
+export default Vue.extend({
   name: "WeatherWidget",
   components: {SettingsComponent, WeatherCard, EmptyWidget, BackgroundCard},
   computed: {
@@ -51,11 +53,12 @@ export default {
   },
 
   methods: {
-    toggleStatus() {
+    toggleStatus(): void {
       this.isSettingsVisible = !this.isSettingsVisible
     }
   },
-}
+})
+
 </script>
 
 <style scoped lang="scss">

@@ -9,7 +9,10 @@ declare type weatherInfoType = {
     sys: {
         country: string
     },
-    order: number
+    order: number,
+    weather: [{
+        description: string
+    }]
 }
 
 declare type ArrayWeatherInfoType = Array<weatherInfoType>
