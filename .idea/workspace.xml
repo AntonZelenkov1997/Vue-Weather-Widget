@@ -1,15 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="44819f9d-f619-4a33-b713-3da3b866f0e9" name="Changes" comment="Remove fonts. Start fixing problems with typescript">
-      <change afterPath="$PROJECT_DIR$/src/types/png.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/BackgroundCard/BackgroundCard.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/BackgroundCard/BackgroundCard.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/CityBlock.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/CityBlock.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/SettingsComponent/SettingsComponent.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/SettingsComponent/SettingsComponent.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/WeatherCard/WeatherCard.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/WeatherCard/WeatherCard.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/WeatherWidget/WeatherWidget.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/WeatherWidget/WeatherWidget.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/types/index.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/types/index.d.ts" afterDir="false" />
+    <list default="true" id="44819f9d-f619-4a33-b713-3da3b866f0e9" name="Changes" comment="Calm down Typescript">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,7 +80,7 @@
       <workItem from="1633272183235" duration="12894000" />
       <workItem from="1633286345827" duration="14434000" />
       <workItem from="1633325405342" duration="4882000" />
-      <workItem from="1633330360218" duration="4176000" />
+      <workItem from="1633330360218" duration="4343000" />
     </task>
     <task id="LOCAL-00001" summary="Fix problems with fonts">
       <created>1633125183531</created>
@@ -103,7 +96,14 @@
       <option name="project" value="LOCAL" />
       <updated>1633330402676</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Calm down Typescript">
+      <created>1633334629248</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1633334629248</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -129,6 +129,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Fix problems with fonts" />
     <MESSAGE value="Remove fonts. Start fixing problems with typescript" />
-    <option name="LAST_COMMIT_MESSAGE" value="Remove fonts. Start fixing problems with typescript" />
+    <MESSAGE value="Calm down Typescript" />
+    <option name="LAST_COMMIT_MESSAGE" value="Calm down Typescript" />
   </component>
 </project>
