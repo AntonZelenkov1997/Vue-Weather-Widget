@@ -18,7 +18,7 @@
 
 <script lang="ts">
 
-import {mapActions, mapGetters} from "vuex";
+import {mapGetters} from "vuex";
 import WeatherCard from "../WeatherCard/WeatherCard.vue";
 import EmptyWidget from "../EmptyWidget/EmptyWidget.vue";
 import SettingsComponent from "../SettingsComponent/SettingsComponent.vue";
@@ -35,11 +35,11 @@ export default {
     ]),
 
 
-    isEmptyWidget() {
+    isEmptyWidget(): boolean {
       return this.GET_CITIES_IS_EMPTY && !this.isSettingsVisible
     },
 
-    isWeatherCard() {
+    isWeatherCard(): boolean {
       return !this.GET_CITIES_IS_EMPTY && !this.isSettingsVisible
     },
   },
@@ -51,7 +51,6 @@ export default {
   },
 
   methods: {
-
     toggleStatus() {
       this.isSettingsVisible = !this.isSettingsVisible
     }
@@ -75,22 +74,6 @@ export default {
     left: 0;
     width: 100%;
     height: 100%;
-
-    //&__bgCard {
-    //  object-fit: cover;
-    //  width: 100%;
-    //  height: 100%;
-    //  position: absolute;
-    //}
-
-    //&__overlay {
-    //  background-color: black;
-    //  opacity: 0.1;
-    //  position: absolute;
-    //  width: 100%;
-    //  height: 100%;
-    //  z-index: 1;
-    //}
   }
 
   &__settingGear, .settingGear {

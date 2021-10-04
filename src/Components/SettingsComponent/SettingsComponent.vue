@@ -37,12 +37,12 @@ export default {
     ]),
 
     async setWeatherByCity() {
-      await this.SET_NEW_CITY(this.$refs.input.value)
+      await this.SET_NEW_CITY(<string>this.$refs.input.value)
       this.clearInput()
     },
 
-    async onKeyEnter(e) {
-      if (e.keyCode === 13) {
+    async onKeyEnter(e: KeyboardEvent<HTMLInputElement>) {
+      if (e.code === 'Enter') {
         await this.SET_NEW_CITY(e.target.value);
         this.clearInput()
       }

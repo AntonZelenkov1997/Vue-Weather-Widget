@@ -45,11 +45,11 @@
 
 import {mapActions} from "vuex";
 
-export default {
+export default Vue.extend({
   name: "CityBlock",
   props: {
     weatherInfo: {
-      type: Object,
+      type: Object as weatherInfoType,
       required: true
     },
   },
@@ -63,6 +63,7 @@ export default {
     ]),
 
     deleteCityBlock() {
+
       this.DELETE_CITY_SETTINGS(this.weatherInfo.id)
     },
 
@@ -78,11 +79,11 @@ export default {
   },
 
   computed: {
-    getCityName() {
+    getCityName(): string {
       return this.weatherInfo.name
     }
   }
-}
+})
 </script>
 
 <style scoped lang="scss">

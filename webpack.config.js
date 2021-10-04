@@ -24,7 +24,7 @@ module.exports = {
                 test: /\.tsx?$/,
                 loader: "ts-loader",
                 options: {
-                    transpileOnly: true,
+                    transpileOnly: false,
                     appendTsSuffixTo: [/\.vue$/],
                 },
                 exclude: /node_modules/,

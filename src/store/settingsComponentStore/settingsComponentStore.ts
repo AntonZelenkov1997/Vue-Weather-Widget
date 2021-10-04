@@ -2,8 +2,14 @@ import axios from "axios";
 import {WEATHER_API_KEY, WEATHER_BASE_URI} from "../../API/API";
 import {saveToLocalStorage} from "../../utils/localStorageUtils";
 import transformWeatherData from "../../utils/transformWeatherData";
+import {settingsStateType, VuexModule} from "../../types/vuex";
 
-const settingsComponentStore = {
+
+
+
+type settingsComponentStoreType = VuexModule<settingsStateType>
+
+const settingsComponentStore: settingsComponentStoreType = {
     state: () => ({
         cities: [] as ArrayWeatherInfoType,
         currentCityBlockDrag: null
@@ -11,7 +17,6 @@ const settingsComponentStore = {
 
     actions: {
         async SET_NEW_CITY({commit, getters}, payload: string) {
-
             try {
                 const response = await axios({
                     method: "GET",
