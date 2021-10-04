@@ -11,7 +11,7 @@ How it launches?
 ``` console
 git clone https://github.com/AntonZelenkov1997/vue-weather-widget.git
 yarn install / npm install
-yarn run dev / npm run dev
+yarn run start / npm run start
 ```
 
 ## Stack

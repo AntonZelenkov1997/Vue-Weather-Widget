@@ -7,4 +7,4 @@ new Vue({
   components: { WeatherWidget },
   render: (h) => h(WeatherWidget),
   store: store
-})
+}).$mount('#root')
