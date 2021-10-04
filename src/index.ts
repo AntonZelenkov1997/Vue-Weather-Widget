@@ -1,10 +1,10 @@
 import Vue from 'vue'
-import App from "./Components/App/App.vue";
-import store from "./store";
 
+import store from "./store";
+import WeatherWidget from "./Components/WeatherWidget/WeatherWidget.vue";
 
 new Vue({
-  components: { App },
-  render: (h) => h(App),
+  components: { WeatherWidget },
+  render: (h) => h(WeatherWidget),
   store: store
-}).$mount('#root');
+})

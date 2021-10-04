@@ -20,11 +20,13 @@
 
 import Vue from 'vue';
 
-import {mapGetters} from "vuex";
+import {mapActions, mapGetters} from "vuex";
 import WeatherCard from "../WeatherCard/WeatherCard.vue";
 import EmptyWidget from "../EmptyWidget/EmptyWidget.vue";
 import SettingsComponent from "../SettingsComponent/SettingsComponent.vue";
 import BackgroundCard from "../BackgroundCard/BackgroundCard.vue";
+import getLocation from "../../utils/getLocation";
+import {getFromLocalStorage, localStorageKeyIsEmpty} from "../../utils/localStorageUtils";
 
 
 export default Vue.extend({
@@ -53,10 +55,21 @@ export default Vue.extend({
   },
 
   methods: {
+    ...mapActions(['SET_NEW_CITY_BY_LAT_AND_LON', 'SET_NEW_CITY']),
     toggleStatus(): void {
       this.isSettingsVisible = !this.isSettingsVisible
     }
   },
+
+  mounted() {
+    getLocation((position => {
+      if (localStorageKeyIsEmpty('settings')) this.SET_NEW_CITY_BY_LAT_AND_LON(position)
+      else {
+        const weatherInfo = getFromLocalStorage('settings');
+        weatherInfo.forEach((city) => this.SET_NEW_CITY(city.name));
+      }
+    }));
+  }
 })
 
 </script>
