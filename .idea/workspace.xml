@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="44819f9d-f619-4a33-b713-3da3b866f0e9" name="Changes" comment="Calm down Typescript">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-    </list>
+    <list default="true" id="44819f9d-f619-4a33-b713-3da3b866f0e9" name="Changes" comment="Add .idea folder to .gitignore" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -37,7 +35,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="list.type.of.created.stylesheet" value="SCSS" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="web-ide.project.structure" />
     <property name="ts.external.directory.path" value="C:\Projects\vue-weather-widget\node_modules\typescript\lib" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -67,6 +65,9 @@
     </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SvnConfiguration">
+    <configuration>C:\Users\tosha\AppData\Roaming\Subversion</configuration>
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="44819f9d-f619-4a33-b713-3da3b866f0e9" name="Changes" comment="" />
@@ -80,7 +81,7 @@
       <workItem from="1633272183235" duration="12894000" />
       <workItem from="1633286345827" duration="14434000" />
       <workItem from="1633325405342" duration="4882000" />
-      <workItem from="1633330360218" duration="4343000" />
+      <workItem from="1633330360218" duration="4612000" />
     </task>
     <task id="LOCAL-00001" summary="Fix problems with fonts">
       <created>1633125183531</created>
@@ -103,7 +104,14 @@
       <option name="project" value="LOCAL" />
       <updated>1633334629248</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Add .idea folder to .gitignore">
+      <created>1633334773884</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1633334773884</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -130,6 +138,7 @@
     <MESSAGE value="Fix problems with fonts" />
     <MESSAGE value="Remove fonts. Start fixing problems with typescript" />
     <MESSAGE value="Calm down Typescript" />
-    <option name="LAST_COMMIT_MESSAGE" value="Calm down Typescript" />
+    <MESSAGE value="Add .idea folder to .gitignore" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add .idea folder to .gitignore" />
   </component>
 </project>
