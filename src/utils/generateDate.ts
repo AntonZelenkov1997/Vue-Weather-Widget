@@ -1,5 +1,6 @@
 type generateDateType = () => string
 
+// Функция, выполняющая получение текущего времени
 const generateDate: generateDateType = () => {
 
     const fullDate: Date = new Date();

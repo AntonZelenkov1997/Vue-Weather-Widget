@@ -40,23 +40,31 @@ export default Vue.extend({
       'SET_NEW_CITY'
     ]),
 
+    // Асинхронная функция, вызывающаяся при клике на кнопку
     async setWeatherByCity() {
 
+      // Передаём в action значение input-поля
       await this.SET_NEW_CITY((this.$refs.input as HTMLInputElement)?.value)
 
+      // Очищаем форму
       this.clearInput()
     },
 
+    // Асинхронная функция, вызывающаяся при нажатии на кнопку Enter
     async onKeyEnter(e: KeyboardEvent) {
       if (e.code === 'Enter') {
+
+        // Передаём в action значение input-поля
         await this.SET_NEW_CITY((e.target as HTMLInputElement).value);
+
+        // Очищаем форму
         this.clearInput()
       }
     },
 
+    // Функция, выпоняющая очистку input поля
     clearInput() {
-
-      if (this.$refs.input) {
+      if ("input" in this.$refs) {
         (this.$refs.input as HTMLInputElement).value = ''
       }
     }

@@ -1,3 +1,4 @@
+// Частично-описательный тип схемы-ответа от сервера
 declare type weatherInfoType = {
     id: number,
     name: string,

@@ -56,12 +56,17 @@ export default Vue.extend({
 
   methods: {
     ...mapActions(['SET_NEW_CITY_BY_LAT_AND_LON', 'SET_NEW_CITY']),
+
+
     toggleStatus(): void {
       this.isSettingsVisible = !this.isSettingsVisible
     }
   },
 
   mounted() {
+    // Функция, в которой происходит проверка существующих настроек в localStorage.
+    // Если в localStorage нет никаких данных по ключу settings - мы рассчитываем погоду согласно местоположению пользователя
+    // Если настройки есть - получаем список городов, сохранённых в localStorage и узнаём актуальные данные о погоде в этих городах
     getLocation((position => {
       if (localStorageKeyIsEmpty('settings')) this.SET_NEW_CITY_BY_LAT_AND_LON(position)
       else {

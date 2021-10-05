@@ -22,7 +22,7 @@
 </template>
 
 <script lang="ts">
-import {mapGetters} from "vuex";
+
 import Vue, {PropType} from 'vue';
 
 import rv from "../../utils/rv";
@@ -38,10 +38,6 @@ export default Vue.extend({
   },
 
   computed: {
-    ...mapGetters([
-      ''
-    ]),
-
     getMaxTemperature() {
       return rv(this.weatherInfo.main.temp_max)
     },
@@ -54,16 +50,17 @@ export default Vue.extend({
       return rv(this.weatherInfo.main.temp)
     },
 
+    // Typescript просит явно указать тип внутри computed-свойств Vue
     getWeatherType() {
-      return this.weatherInfo.weather[0].description
+      return (this.weatherInfo as weatherInfoType).weather[0].description
     },
 
     getCountryCode() {
-      return this.weatherInfo.sys.country
+      return (this.weatherInfo as weatherInfoType).sys.country
     },
 
-    getCityName() {
-      return this.weatherInfo.name
+    getCityName(): string {
+      return (this.weatherInfo as weatherInfoType).name
     },
 
     getDate() {

@@ -12,15 +12,21 @@
 
 <script lang="ts">
 
+import Vue from 'vue';
+
 import redForest from '../../assets/images/red_forest.png';
 import coldMountains from '../../assets/images/cold_mountains.png'
-import Vue from 'vue';
+
 
 export default Vue.extend({
   name: "BackgroundCard",
   data() {
     return {
+      // State для переключения состояния,
+      // когда нужно менять одно изображение на другое
       status: true,
+
+      // State - указатель на функцию setInterval
       setIntervalLink: setInterval.bind(window) as any
     }
   },
@@ -35,12 +41,14 @@ export default Vue.extend({
   },
 
   mounted() {
+    // Каждые 10 секунд переключается изображение
     this.setIntervalLink(() => {
       this.status = !this.status
     }, 10000)
   },
 
   destroyed() {
+    // При размонтировании компонента отписываемся от setInterval
     clearInterval(this.setIntervalLink)
   }
 })

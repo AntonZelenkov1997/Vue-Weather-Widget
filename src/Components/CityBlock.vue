@@ -64,16 +64,18 @@ export default Vue.extend({
       'SET_CHANGE_ORDER'
     ]),
 
+    // Функция, выполняющая удаление города в настройках
     deleteCityBlock() {
-
       this.DELETE_CITY_SETTINGS(this.weatherInfo.id)
     },
 
 
+    // Функция, выполняющая сохранение текущего города, которое пользователь захватил курсором.
     dragStartHandler() {
       this.SET_CURRENT_CITY_BLOCK_DRAG(this.weatherInfo)
     },
 
+    // Функция, выполняющая переопределение порядка при изменении элементов в списке городов.
     dropHandler() {
       this.SET_CHANGE_ORDER(this.weatherInfo)
     },
