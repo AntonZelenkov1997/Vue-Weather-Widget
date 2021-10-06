@@ -90,7 +90,9 @@ const settingsComponentStore: settingsComponentStoreType = {
                 }
             })
 
-            commit('SET_CHANGE_ORDER', allWeatherStore)
+            const sortAllWeatherStore = allWeatherStore.sort((a, b) => a.order - b.order)
+
+            commit('SET_CHANGE_ORDER', sortAllWeatherStore)
 
         }
     },
@@ -116,6 +118,7 @@ const settingsComponentStore: settingsComponentStoreType = {
         // Мутация, переопределяющая порядок элементов
         SET_CHANGE_ORDER(state, payload: ArrayWeatherInfoType) {
             state.cities = payload
+            saveToLocalStorage('settings', state.cities);
         }
     },
 

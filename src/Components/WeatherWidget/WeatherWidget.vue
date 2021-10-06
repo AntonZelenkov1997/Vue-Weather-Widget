@@ -63,17 +63,21 @@ export default Vue.extend({
     }
   },
 
-  mounted() {
+  async mounted() {
     // Функция, в которой происходит проверка существующих настроек в localStorage.
     // Если в localStorage нет никаких данных по ключу settings - мы рассчитываем погоду согласно местоположению пользователя
-    // Если настройки есть - получаем список городов, сохранённых в localStorage и узнаём актуальные данные о погоде в этих городах
     getLocation((position => {
       if (localStorageKeyIsEmpty('settings')) this.SET_NEW_CITY_BY_LAT_AND_LON(position)
-      else {
-        const weatherInfo = getFromLocalStorage('settings');
-        weatherInfo.forEach((city) => this.SET_NEW_CITY(city.name));
-      }
     }));
+
+    // Если существуют какие-либо настройки в localStorage - получаем города и находим их актуальную температуру
+    if (!localStorageKeyIsEmpty('settings')) {
+      const weatherInfo = getFromLocalStorage('settings');
+
+      for await (const city of weatherInfo) {
+        await this.SET_NEW_CITY(city.name);
+      }
+    }
   }
 })
 

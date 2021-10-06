@@ -28,7 +28,7 @@
 import {mapActions, mapGetters} from "vuex";
 import Vue from "vue";
 
-import CityBlock from "../CityBlock.vue";
+import CityBlock from "../CityBlock/CityBlock.vue";
 
 
 export default Vue.extend({
