@@ -1,4 +1,4 @@
-type callbackType = (position: GeolocationPosition) => void;
+type callbackType = (position: GeolocationPosition) => Promise<void>;
 type getLocationType = (callback: callbackType) => void
 
 // Функция, которая получает местоположение пользователя
