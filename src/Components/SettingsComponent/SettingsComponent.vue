@@ -9,7 +9,7 @@
     </div>
 
     <div class="inputWrapper">
-      <input class="inputText" type="text" placeholder="Add Location" ref="input" @keypress="onKeyEnter"/>
+      <input class="inputText" type="text" placeholder="Add Location" ref="input" @keypress.enter="onKeyEnter"/>
       <button class="buttonSend" title="Отправить" @click="setWeatherByCity">
 
         <svg class="sendIcon" viewBox="0 0 24 24" aria-hidden="true">
@@ -52,14 +52,13 @@ export default Vue.extend({
 
     // Асинхронная функция, вызывающаяся при нажатии на кнопку Enter
     async onKeyEnter(e: KeyboardEvent) {
-      if (e.code === 'Enter') {
 
-        // Передаём в action значение input-поля
-        await this.SET_NEW_CITY((e.target as HTMLInputElement).value);
+      // Передаём в action значение input-поля
+      await this.SET_NEW_CITY((e.target as HTMLInputElement).value);
 
-        // Очищаем форму
-        this.clearInput()
-      }
+      // Очищаем форму
+      this.clearInput()
+
     },
 
     // Функция, выпоняющая очистку input поля
