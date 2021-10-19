@@ -125,7 +125,7 @@ const settingsComponentStore: settingsComponentStoreType = {
     getters: {
         // Геттер, отображающий список городов на основе их значения order
         GET_CITIES(state) {
-            return state.cities.sort((a, b) => a.order - b.order)
+            return {...state}.cities.sort((a, b) => a.order - b.order)
         },
 
         // Геттер, возвращающий проверку существуют ли города в настройках
